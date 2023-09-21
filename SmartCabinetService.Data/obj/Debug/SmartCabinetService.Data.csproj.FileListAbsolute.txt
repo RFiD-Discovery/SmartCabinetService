@@ -1,0 +1,6 @@
+D:\TFS\Development\RFiD\Discovery\Devices\Discovery.Communication\SmartCabinetService\SmartCabinetService.Data\bin\Debug\SmartCabinetService.Data.dll
+D:\TFS\Development\RFiD\Discovery\Devices\Discovery.Communication\SmartCabinetService\SmartCabinetService.Data\bin\Debug\SmartCabinetService.Data.pdb
+D:\TFS\Development\RFiD\Discovery\Devices\Discovery.Communication\SmartCabinetService\SmartCabinetService.Data\obj\Debug\SmartCabinetService.Data.csproj.AssemblyReference.cache
+D:\TFS\Development\RFiD\Discovery\Devices\Discovery.Communication\SmartCabinetService\SmartCabinetService.Data\obj\Debug\SmartCabinetService.Data.csproj.CoreCompileInputs.cache
+D:\TFS\Development\RFiD\Discovery\Devices\Discovery.Communication\SmartCabinetService\SmartCabinetService.Data\obj\Debug\SmartCabinetService.Data.dll
+D:\TFS\Development\RFiD\Discovery\Devices\Discovery.Communication\SmartCabinetService\SmartCabinetService.Data\obj\Debug\SmartCabinetService.Data.pdb

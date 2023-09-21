@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SmartCabinetService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BrokerAdress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3.11.4.218</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1883</Value>
+    </Setting>
+    <Setting Name="ClientId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MqttService</Value>
+    </Setting>
+    <Setting Name="Topic" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">integration/#</Value>
+    </Setting>
+    <Setting Name="CabinetLocationId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

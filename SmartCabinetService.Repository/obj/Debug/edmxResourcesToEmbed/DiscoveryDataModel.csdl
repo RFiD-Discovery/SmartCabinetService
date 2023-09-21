@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SmartCabinetService.Repository" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="web_search">
+    <Key>
+      <PropertyRef Name="rfid_asset_id" />
+      <PropertyRef Name="rfid_asset_name" />
+      <PropertyRef Name="asset_id" />
+      <PropertyRef Name="parent_location_name" />
+      <PropertyRef Name="parent_location_id" />
+      <PropertyRef Name="still_detected_at_location" />
+      <PropertyRef Name="parent_category_name" />
+      <PropertyRef Name="parent_category_id" />
+      <PropertyRef Name="category_name" />
+      <PropertyRef Name="category_id" />
+      <PropertyRef Name="risk" />
+      <PropertyRef Name="owner_name" />
+      <PropertyRef Name="owner_id" />
+      <PropertyRef Name="assigned_parent_location_id" />
+      <PropertyRef Name="assigned_parent_location_name" />
+      <PropertyRef Name="assigned_location_id" />
+      <PropertyRef Name="battery_level" />
+      <PropertyRef Name="alert_count" />
+      <PropertyRef Name="ppm_active" />
+      <PropertyRef Name="gs1_department_id" />
+      <PropertyRef Name="asset_type" />
+      <PropertyRef Name="mapping_enabled" />
+      <PropertyRef Name="inuse" />
+      <PropertyRef Name="asset_status_id" />
+      <PropertyRef Name="relationship" />
+      <PropertyRef Name="relationship_status" />
+      <PropertyRef Name="alarm_active" />
+      <PropertyRef Name="inspections_due" />
+      <PropertyRef Name="gs1_asset" />
+    </Key>
+    <Property Name="rfid_asset_id" Type="Int32" Nullable="false" />
+    <Property Name="rfid_asset_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="asset_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="notes" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="parent_location_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="parent_location_id" Type="Int32" Nullable="false" />
+    <Property Name="location_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="location_id" Type="Int32" />
+    <Property Name="timestamp" Type="DateTimeOffset" Precision="7" />
+    <Property Name="still_detected_at_location_timestamp" Type="DateTimeOffset" Precision="7" />
+    <Property Name="location_time" Type="Int32" />
+    <Property Name="still_detected_at_location" Type="Int32" Nullable="false" />
+    <Property Name="parent_category_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="parent_category_id" Type="Int32" Nullable="false" />
+    <Property Name="category_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" />
+    <Property Name="risk" Type="Int32" Nullable="false" />
+    <Property Name="owner_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="owner_id" Type="Int32" Nullable="false" />
+    <Property Name="root_assigned_location_id" Type="Int32" />
+    <Property Name="root_assigned_location_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="assigned_parent_location_id" Type="Int32" Nullable="false" />
+    <Property Name="assigned_parent_location_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="assigned_location_id" Type="Int32" Nullable="false" />
+    <Property Name="assigned_location_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="active_tag_id" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="battery_level" Type="Int32" Nullable="false" />
+    <Property Name="passive_tag_id" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="alert_count" Type="Int32" Nullable="false" />
+    <Property Name="ppm_active" Type="Boolean" Nullable="false" />
+    <Property Name="barcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="serial_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gs1_department_id" Type="Int32" Nullable="false" />
+    <Property Name="gs1_department_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="asset_type" Type="Int32" Nullable="false" />
+    <Property Name="mapping_enabled" Type="Int32" Nullable="false" />
+    <Property Name="inuse" Type="Boolean" Nullable="false" />
+    <Property Name="route_id" Type="Int32" />
+    <Property Name="gs1_site_code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="asset_status_id" Type="Int32" Nullable="false" />
+    <Property Name="asset_status_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="udf1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf6" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf7" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf8" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf9" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="udf10" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="relationship" Type="Int32" Nullable="false" />
+    <Property Name="relationship_status" Type="Int32" Nullable="false" />
+    <Property Name="alarm_active" Type="Int32" Nullable="false" />
+    <Property Name="lot_batch" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="production_date" Type="DateTimeOffset" Precision="7" />
+    <Property Name="expiry_date" Type="DateTimeOffset" Precision="7" />
+    <Property Name="inspections_due" Type="Int32" Nullable="false" />
+    <Property Name="gs1_asset" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DiscoveryEntityContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="web_search" EntityType="Self.web_search" />
+  </EntityContainer>
+</Schema>

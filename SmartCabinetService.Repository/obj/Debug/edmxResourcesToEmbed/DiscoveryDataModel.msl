@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SmartCabinetServiceRepositoryStoreContainer" CdmEntityContainer="DiscoveryEntityContext">
+    <EntitySetMapping Name="web_search">
+      <EntityTypeMapping TypeName="SmartCabinetService.Repository.web_search">
+        <MappingFragment StoreEntitySet="web_search">
+          <ScalarProperty Name="rfid_asset_id" ColumnName="rfid_asset_id" />
+          <ScalarProperty Name="rfid_asset_name" ColumnName="rfid_asset_name" />
+          <ScalarProperty Name="asset_id" ColumnName="asset_id" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="parent_location_name" ColumnName="parent_location_name" />
+          <ScalarProperty Name="parent_location_id" ColumnName="parent_location_id" />
+          <ScalarProperty Name="location_name" ColumnName="location_name" />
+          <ScalarProperty Name="location_id" ColumnName="location_id" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="still_detected_at_location_timestamp" ColumnName="still_detected_at_location_timestamp" />
+          <ScalarProperty Name="location_time" ColumnName="location_time" />
+          <ScalarProperty Name="still_detected_at_location" ColumnName="still_detected_at_location" />
+          <ScalarProperty Name="parent_category_name" ColumnName="parent_category_name" />
+          <ScalarProperty Name="parent_category_id" ColumnName="parent_category_id" />
+          <ScalarProperty Name="category_name" ColumnName="category_name" />
+          <ScalarProperty Name="category_id" ColumnName="category_id" />
+          <ScalarProperty Name="risk" ColumnName="risk" />
+          <ScalarProperty Name="owner_name" ColumnName="owner_name" />
+          <ScalarProperty Name="owner_id" ColumnName="owner_id" />
+          <ScalarProperty Name="root_assigned_location_id" ColumnName="root_assigned_location_id" />
+          <ScalarProperty Name="root_assigned_location_name" ColumnName="root_assigned_location_name" />
+          <ScalarProperty Name="assigned_parent_location_id" ColumnName="assigned_parent_location_id" />
+          <ScalarProperty Name="assigned_parent_location_name" ColumnName="assigned_parent_location_name" />
+          <ScalarProperty Name="assigned_location_id" ColumnName="assigned_location_id" />
+          <ScalarProperty Name="assigned_location_name" ColumnName="assigned_location_name" />
+          <ScalarProperty Name="active_tag_id" ColumnName="active_tag_id" />
+          <ScalarProperty Name="battery_level" ColumnName="battery_level" />
+          <ScalarProperty Name="passive_tag_id" ColumnName="passive_tag_id" />
+          <ScalarProperty Name="alert_count" ColumnName="alert_count" />
+          <ScalarProperty Name="ppm_active" ColumnName="ppm_active" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="serial_number" ColumnName="serial_number" />
+          <ScalarProperty Name="gs1_department_id" ColumnName="gs1_department_id" />
+          <ScalarProperty Name="gs1_department_name" ColumnName="gs1_department_name" />
+          <ScalarProperty Name="asset_type" ColumnName="asset_type" />
+          <ScalarProperty Name="mapping_enabled" ColumnName="mapping_enabled" />
+          <ScalarProperty Name="inuse" ColumnName="inuse" />
+          <ScalarProperty Name="route_id" ColumnName="route_id" />
+          <ScalarProperty Name="gs1_site_code" ColumnName="gs1_site_code" />
+          <ScalarProperty Name="asset_status_id" ColumnName="asset_status_id" />
+          <ScalarProperty Name="asset_status_name" ColumnName="asset_status_name" />
+          <ScalarProperty Name="udf1" ColumnName="udf1" />
+          <ScalarProperty Name="udf2" ColumnName="udf2" />
+          <ScalarProperty Name="udf3" ColumnName="udf3" />
+          <ScalarProperty Name="udf4" ColumnName="udf4" />
+          <ScalarProperty Name="udf5" ColumnName="udf5" />
+          <ScalarProperty Name="udf6" ColumnName="udf6" />
+          <ScalarProperty Name="udf7" ColumnName="udf7" />
+          <ScalarProperty Name="udf8" ColumnName="udf8" />
+          <ScalarProperty Name="udf9" ColumnName="udf9" />
+          <ScalarProperty Name="udf10" ColumnName="udf10" />
+          <ScalarProperty Name="relationship" ColumnName="relationship" />
+          <ScalarProperty Name="relationship_status" ColumnName="relationship_status" />
+          <ScalarProperty Name="alarm_active" ColumnName="alarm_active" />
+          <ScalarProperty Name="lot_batch" ColumnName="lot_batch" />
+          <ScalarProperty Name="production_date" ColumnName="production_date" />
+          <ScalarProperty Name="expiry_date" ColumnName="expiry_date" />
+          <ScalarProperty Name="inspections_due" ColumnName="inspections_due" />
+          <ScalarProperty Name="gs1_asset" ColumnName="gs1_asset" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
