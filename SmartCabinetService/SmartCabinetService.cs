@@ -12,8 +12,7 @@ using SmartCabinetService.Classes;
 using System.Linq;
 using SmartCabinetService.Constants;
 using System.Data;
-using MQTTnet.Server;
-using Topshelf.Options;
+using System.Diagnostics;
 
 namespace SmartCabinetService
 {
@@ -131,6 +130,7 @@ namespace SmartCabinetService
         {
             try
             {
+
                 var payload = arg.ApplicationMessage.ConvertPayloadToString();
 
                 if (!string.IsNullOrEmpty(payload))
@@ -139,10 +139,11 @@ namespace SmartCabinetService
 
                     if (tagEvents.tag_reads != null)
                     {
+                        _log.Info($"{tagEvents.tag_reads.Count}");
                         if (tagEvents.tag_reads.Count > 0)
                         {
                             ProcessAssets(tagEvents.tag_reads);
-                        }
+                        }                       
                     }
                 }
             }
@@ -179,8 +180,6 @@ namespace SmartCabinetService
                     var sql = StoredProcedures.AssetLocationUpate;
 
                     _repository.ExecuteSql(sql, args);
-
-                    //_log.Info($"Asset: {asset.rfid_asset_name} location updated ");
                 }
             }
             catch (Exception ex)
@@ -196,6 +195,13 @@ namespace SmartCabinetService
                 _repository = new DiscoveryRepository();
 
                 _assets = _repository.FindAll<web_search>(a => !string.IsNullOrEmpty(a.passive_tag_id));
+                int targetLength = 24;
+                char paddingChar = '0';
+                foreach (var asset in _assets)
+                {
+                    asset.passive_tag_id = asset.passive_tag_id.PadLeft(targetLength, paddingChar);
+                    
+                }
             }
             catch (Exception ex)
             {
